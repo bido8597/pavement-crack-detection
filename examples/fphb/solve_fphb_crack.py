@@ -38,7 +38,7 @@ base_weights = '5stage-vgg.caffemodel'
 #base_weights = 'hed_pretrained_bsds.caffemodel'
 # init
 caffe.set_mode_gpu()
-caffe.set_device(3)
+caffe.set_device(0)
 
 solver = caffe.SGDSolver('solver_fphb_crack.prototxt')
 
