@@ -14,7 +14,7 @@ sys.path.insert(0, caffe_root + 'python')
 
 import caffe
 
-data_root = '../../data/crack/GAPs/'
+data_root = '../../data/crack/'
 #load test data list
 with open(data_root + 'test.txt') as f:
     test_lst = f.readlines
