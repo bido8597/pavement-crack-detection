@@ -76,7 +76,7 @@ for model in modelList:
     #load network architecture and trained model
     net = caffe.Net(testnet, model_root +model+'.caffemodel', caffe.TEST)
     idx = 0
-    outputpath='/content/gdrive/My Drive/GP/test/'
+    outputpath=valresults+model+'/'
     time_avg=0    
     if not os.path.exists(outputpath):
         os.makedirs(outputpath)
